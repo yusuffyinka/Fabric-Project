@@ -1,0 +1,780 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.131.1203.0 (24.07)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DirectQuery to AS - LA_Crime\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "fact.total_committed_crime": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Fact",
+                    "ConceptualProperty": "Total Committed Crime"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Current Yr Crime": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Total Crime": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DirectQuery to AS - LA_Crime",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "True"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = AnalysisServices.Database(\"powerbi://api.powerbi.com/v1.0/myorg/Fabric%20Projects\", \"LA_Crime\"),",
+          "    Cubes = Table.Combine(Source[Data]),",
+          "    Cube = Cubes{[Id=\"5aa8e1a7-a52b-4339-a5a1-e3099868298b\", Kind=\"Cube\"]}[Data]",
+          "in",
+          "    Cube"
+        ],
+        "kind": "m",
+        "lineageTag": "19194555-1f54-4a15-a8c9-1ed263254817"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "3f58ce7e-6f70-4e62-b171-30b0f5703c9d",
+        "fromColumn": "Date_Rptd",
+        "fromTable": "Fact",
+        "isActive": false,
+        "toColumn": "Date",
+        "toTable": "Calendar"
+      },
+      {
+        "name": "80105529-4542-46fc-b77e-571fc5084c56",
+        "fromColumn": "DATE_OCC",
+        "fromTable": "Fact",
+        "toColumn": "Date",
+        "toTable": "Calendar"
+      }
+    ],
+    "sourceQueryCulture": "en-GB",
+    "tables": [
+      {
+        "name": "Fact",
+        "columns": [
+          {
+            "name": "DR_NO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6ab0928f-aa21-46a3-a751-55711b6e29eb",
+            "sourceColumn": "DR_NO",
+            "sourceLineageTag": "52043175-333c-4c70-8c9f-46da583877dc",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Date_Rptd",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "dateTime",
+            "formatString": "General Number",
+            "lineageTag": "1e35da0b-1b5a-4686-8ba0-600022200973",
+            "sourceColumn": "Date_Rptd",
+            "sourceLineageTag": "f4cb7732-f8eb-472d-8ac1-8c48a19ade29",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DATE_OCC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "dateTime",
+            "formatString": "General Number",
+            "lineageTag": "10b26220-7634-4687-b47d-76bffd0ab401",
+            "sourceColumn": "DATE_OCC",
+            "sourceLineageTag": "4d402ad4-bf2c-45d6-930d-5414825cc57b",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TIME_OCC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "double",
+            "lineageTag": "c0dfa249-80cf-498e-af2c-3577df008ce5",
+            "sourceColumn": "TIME_OCC",
+            "sourceLineageTag": "db5d1db8-9b50-4eed-b960-bccd7f211cdd",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AREA_NAME",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "96bf9a5f-3ec0-499d-8953-fec03d43c96a",
+            "sourceColumn": "AREA_NAME",
+            "sourceLineageTag": "b78a4a5a-66ea-4c95-9519-96746d98f571",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Crm_Cd_Desc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "ca33e72b-f310-4e53-ad8c-7ed747cb3ef7",
+            "sourceColumn": "Crm_Cd_Desc",
+            "sourceLineageTag": "4b84e02d-6c21-45d0-9622-5cb6458259b1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Mocodes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "a290dd17-6a7e-454b-ab84-d65f91bbba16",
+            "sourceColumn": "Mocodes",
+            "sourceLineageTag": "a13215ca-04de-4710-ac29-563a2c8bd75c",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vict_Age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f2d71ac9-c1e7-4d86-98e0-3ba8cbc0d3cd",
+            "sourceColumn": "Vict_Age",
+            "sourceLineageTag": "21f3fff2-492d-4891-b15b-02b0aab8a8af",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Vict_Sex",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "18219e81-db02-4ac5-bada-9c5661a5776c",
+            "sourceColumn": "Vict_Sex",
+            "sourceLineageTag": "a430dbc0-eec1-4d58-a22c-922039c69383",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vict_Descent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "eccef6ba-d837-4373-a142-303e9a9827d8",
+            "sourceColumn": "Vict_Descent",
+            "sourceLineageTag": "4ecad6f9-4fe1-4a7f-a8ea-919e6a8c6834",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Premis_Desc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "21b5356a-8edb-4a6f-93f4-6c87cefb8a26",
+            "sourceColumn": "Premis_Desc",
+            "sourceLineageTag": "e79b7fd2-bcf1-445f-9200-f97476bb188a",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Weapon_Desc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "9c59eafe-f6ba-4b19-b9d2-e763f934add9",
+            "sourceColumn": "Weapon_Desc",
+            "sourceLineageTag": "2240b267-d7d1-45b8-93cc-2d5d79a4c2dc",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "f52fc687-35f6-4c3b-ba1e-9e3bdbee4ea2",
+            "sourceColumn": "Status",
+            "sourceLineageTag": "b0fd4e66-d766-46db-960f-2d1a7f5384b2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status_Desc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "b17b46d7-3917-49bc-b921-4434e4a6810a",
+            "sourceColumn": "Status_Desc",
+            "sourceLineageTag": "e30951df-61a5-4782-b67f-f377deda2e6f",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LOCATION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataCategory"
+              }
+            ],
+            "dataCategory": "Address",
+            "dataType": "string",
+            "lineageTag": "a9f2e8e0-b989-4c4f-ab72-7cc2d0e9966f",
+            "sourceColumn": "LOCATION",
+            "sourceLineageTag": "056db00e-70a3-4ea0-9222-5e5e349c1945",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LAT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "3d14efdb-d947-4e25-b279-739dc442a030",
+            "sourceColumn": "LAT",
+            "sourceLineageTag": "8696d4d2-4b98-4d5d-9a63-9fb8cf5f18b0",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LON",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "f3cf8b64-a562-41ab-88af-bbae803640eb",
+            "sourceColumn": "LON",
+            "sourceLineageTag": "97091aa8-1e68-40b8-ad0c-e5b461b5984e",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Victim_Descent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "472a66c1-75b5-4fb3-8ec5-becc7080e6aa",
+            "sourceColumn": "Victim_Descent",
+            "sourceLineageTag": "1364ebfd-380a-47d9-94fc-c7f7f3b410c5",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Days_to_Report",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "24ad12fd-1679-4768-a768-c411c915822e",
+            "sourceColumn": "Days_to_Report",
+            "sourceLineageTag": "04cf5acf-695a-444d-acd6-3b1fe811cf05",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "Name"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT('Fact'[TIME_OCC], \"hh:00\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "5b45bdca-0df3-4915-a35a-008cc77f28e7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "eaae95c5-e430-4a5c-9418-953c259fa2a9",
+        "measures": [
+          {
+            "name": "Total Committed Crime",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Total Committed Crime\", INTEGER, \"DirectQuery to AS - LA_Crime\")",
+            "formatString": "0",
+            "lineageTag": "47b732a9-6878-4828-9937-92025257b71a",
+            "sourceLineageTag": "c219ed29-3230-4c9c-a104-ac6bcc6df712"
+          },
+          {
+            "name": "Total Distinct Crime",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Total Distinct Crime\", INTEGER, \"DirectQuery to AS - LA_Crime\")",
+            "formatString": "0",
+            "lineageTag": "3ab720ad-08db-4265-979e-536ef01b1361",
+            "sourceLineageTag": "27e127b8-bdd0-499f-accd-fadad39c757d"
+          },
+          {
+            "name": "Avg Time to Report",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Avg Time to Report\", STRING, \"DirectQuery to AS - LA_Crime\")",
+            "lineageTag": "4f7abd28-2bad-46c6-9f4f-ae38d585a699",
+            "sourceLineageTag": "968ea5b2-13ca-43a8-aced-4076616f4b21"
+          },
+          {
+            "name": "Avg Daily Crime",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Avg Daily Crime\", DOUBLE, \"DirectQuery to AS - LA_Crime\")",
+            "lineageTag": "375f6ba8-32dd-4293-b31c-75eedc969532",
+            "sourceLineageTag": "aea23fee-0f78-4b85-a1d8-83afa491e3e2"
+          },
+          {
+            "name": "Theft Related Crime",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Theft Related Crime\", INTEGER, \"DirectQuery to AS - LA_Crime\")",
+            "formatString": "0",
+            "lineageTag": "6c2ce92b-3540-4622-806b-5ad5501e2c93",
+            "sourceLineageTag": "e14c93b6-3a7c-4cea-a11f-8948f0e2a851"
+          },
+          {
+            "name": "Assualt Related Crime",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Assualt Related Crime\", INTEGER, \"DirectQuery to AS - LA_Crime\")",
+            "formatString": "0",
+            "lineageTag": "b2b01b2e-3356-41b9-9c7b-a0817bd18777",
+            "sourceLineageTag": "8aa96984-bba5-4c06-a314-693822283039"
+          },
+          {
+            "name": "Prev Yr Crime",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Prev Yr Crime\", INTEGER, \"DirectQuery to AS - LA_Crime\")",
+            "formatString": "0",
+            "lineageTag": "c8474f58-72d3-43ac-9291-1465239ab4bb",
+            "sourceLineageTag": "1c6b0986-8ad7-4331-80b7-07872fb09c66"
+          },
+          {
+            "name": "Theft Crime Ratio",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Theft Crime Ratio\", STRING, \"DirectQuery to AS - LA_Crime\")",
+            "lineageTag": "b505e295-7ed3-4b97-885d-638395b2b8f9",
+            "sourceLineageTag": "a2ce2b4b-1653-4de1-bf59-3f1e703d6cea"
+          },
+          {
+            "name": "YOY Crime Ratio",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"YOY Crime Ratio\", STRING, \"DirectQuery to AS - LA_Crime\")",
+            "lineageTag": "1fd55fd8-4af3-44da-9fa7-ed1787fa9f6a",
+            "sourceLineageTag": "a3081913-79ab-46d0-9169-c944542d8e52"
+          },
+          {
+            "name": "Prev Yr YTD",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Prev Yr YTD\", INTEGER, \"DirectQuery to AS - LA_Crime\")",
+            "formatString": "0",
+            "lineageTag": "b924b8ad-e02f-4749-8573-01efe6d78ad5",
+            "sourceLineageTag": "9e5ad44e-795b-4ac0-a597-2b74f04b533b"
+          },
+          {
+            "name": "Total YTD",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Total YTD\", INTEGER, \"DirectQuery to AS - LA_Crime\")",
+            "formatString": "0",
+            "lineageTag": "7ef95340-5e34-4e37-9fa3-57b15f6b0523",
+            "sourceLineageTag": "22db1ac6-e6f5-4d02-81ed-6f765a6a963c"
+          },
+          {
+            "name": "Selected area",
+            "dataCategory": "Uncategorized",
+            "expression": "EXTERNALMEASURE(\"Selected area\", STRING, \"DirectQuery to AS - LA_Crime\")",
+            "lineageTag": "9dc6bb98-89a3-4633-bccb-feb6b0fbc53c",
+            "sourceLineageTag": "3f803821-1fa7-4d27-b97c-7c620d85c75b"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Fact",
+            "mode": "directQuery",
+            "source": {
+              "entityName": "Fact",
+              "expressionSource": "DirectQuery to AS - LA_Crime",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "5b14e7ac-22d3-4d85-978d-dc32d0288fb6"
+      },
+      {
+        "name": "Calendar",
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDateTimeCustom\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "dateTime",
+            "formatString": "dd/mm/yy",
+            "isNullable": false,
+            "lineageTag": "439195cb-a7b5-4d26-9618-6636db6eeade",
+            "sourceColumn": "Date",
+            "sourceLineageTag": "bd2c2a50-fde3-4e3d-950e-a08c3dc481f5",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "84512691-42cb-4222-91ad-0a77a8ece6a9",
+            "sourceColumn": "Year",
+            "sourceLineageTag": "cba81488-cfb3-44dc-bceb-394f570c27ab",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "d3195f72-b66a-489b-8849-c4aa976b77c5",
+            "sortByColumn": "Month",
+            "sourceColumn": "Month_name",
+            "sourceLineageTag": "9e348346-7d2f-4b83-b8b1-a70658021d19",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "72fe1405-0caf-423a-be8b-87df3010bfe1",
+            "sourceColumn": "Quarter",
+            "sourceLineageTag": "7e206b1c-777d-4a83-bc26-3a5e661d6ee3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Day_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "77c5cb27-9416-44f8-b0a7-efe0b2451de4",
+            "sortByColumn": "Day_of_week",
+            "sourceColumn": "Day_name",
+            "sourceLineageTag": "84f2875c-4a89-4800-9e58-5ae615cdbe29",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Day_of_week",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "593f6379-e736-4b09-b94b-19306c4427f6",
+            "sourceColumn": "Day_of_week",
+            "sourceLineageTag": "33017ea2-40c6-4f7f-897b-f1fd855a1649",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Qtr",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "0fae2115-49bb-4dcb-ba36-f9ee896e6e0f",
+            "sourceColumn": "Qtr",
+            "sourceLineageTag": "0fb3b248-db25-4aa1-8527-6261a3fba23b",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "453e9458-3ef8-4679-95e2-f70ad06c58f2",
+            "sourceColumn": "Month",
+            "sourceLineageTag": "7863c0a6-2b2d-4c82-9cf7-5d6f8bb7fb7a",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Week_of_year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "double",
+            "lineageTag": "f5127cbb-c173-4be5-a997-32972e87a5d5",
+            "sourceColumn": "Week_of_year",
+            "sourceLineageTag": "79c8a068-0cf2-43b0-ae62-e77e27e5d52a",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Week_of_month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "double",
+            "lineageTag": "37e387ee-addf-4250-97a6-41280a2e4a88",
+            "sourceColumn": "Week_of_month",
+            "sourceLineageTag": "b17bc5f3-baf4-4d59-b6b7-1ac004ecdd9b",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "Name"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT('Calendar'[Date], \"dd\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "f7d05840-4b1d-4adc-840f-637051fa40e4",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT('Calendar'[Date], \"mmm\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "cdeafc31-c381-41e1-8718-82d2ac34c92f",
+            "sortByColumn": "Month",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "de086786-ebbe-4621-9432-9991c15b6bd2",
+        "partitions": [
+          {
+            "name": "Calendar",
+            "mode": "directQuery",
+            "source": {
+              "entityName": "Calendar",
+              "expressionSource": "DirectQuery to AS - LA_Crime",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "fa8d37cd-2d74-49f3-9e3a-9528537a2cea"
+      }
+    ]
+  }
+}
