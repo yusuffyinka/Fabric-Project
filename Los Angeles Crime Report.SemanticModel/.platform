@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Los Angeles Crime Report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "068151e0-94fa-4eae-be43-3fd607b7fb6b"
+  }
+}

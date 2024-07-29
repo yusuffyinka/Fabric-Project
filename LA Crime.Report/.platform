@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "LA Crime"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c5ffed3a-1c91-44c5-ac80-ed50aa5fcc1e"
+  }
+}

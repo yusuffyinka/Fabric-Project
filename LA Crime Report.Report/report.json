@@ -1,0 +1,373 @@
+{
+  "config": "{\"version\":\"5.56\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "1379afc2dcd1203c3d26",
+      "config": "{}",
+      "name": "18e4188132bc29234849",
+      "parameters": "[{\"name\":\"a834804a9255780699a9\",\"boundFilter\":\"6aa0c197802be57ee528\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact\"}},\"Property\":\"AREA_NAME\"}}}]",
+      "type": 1
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "crime_scene5403388309597608.jpeg",
+            "path": "crime_scene5403388309597608.jpeg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}}}}]}}",
+      "displayName": "Overview",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "0fc22be020910a1c7b62",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0b992f0b4618909358a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":197.58237885462557,\"y\":120.44405286343613,\"z\":1000,\"width\":577.8607929515418,\"height\":274.72070484581496,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"Fact.Total Committed Crime\"},{\"queryRef\":\"Fact.Prev Yr Crime\"}],\"Tooltips\":[{\"queryRef\":\"Fact.YOY Crime Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month\"},\"Name\":\"Calendar.Month\",\"NativeReferenceName\":\"Month\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Prev Yr Crime\"},\"Name\":\"Fact.Prev Yr Crime\",\"NativeReferenceName\":\"Prev Yr Crime\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"YOY Crime Ratio\"},\"Name\":\"Fact.YOY Crime Ratio\",\"NativeReferenceName\":\"YOY Crime Ratio\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"lineStyles\":[{\"properties\":{\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'round'\"}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dashed'\"}}}},\"selector\":{\"metadata\":\"Fact.Prev Yr Crime\"}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"6D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ffffff'\"}}}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Canvas'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 274.72,
+          "width": 577.86,
+          "x": 197.58,
+          "y": 120.44,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"0d52d003010c65918527\",\"layouts\":[{\"id\":0,\"position\":{\"x\":12.179735682819384,\"y\":0,\"z\":5000,\"width\":507.488986784141,\"height\":115.03083700440529,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"LOS ANGELES CRIME REPORT (2020 - Present)\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"28pt\",\"color\":\"#ffffff\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 115.03,
+          "width": 507.49,
+          "x": 12.18,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"3f87b9b0e2c36b612c02\",\"layouts\":[{\"id\":0,\"position\":{\"x\":519.6687224669604,\"y\":0,\"z\":3000,\"width\":242.24140969162997,\"height\":108.26431718061674,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Crm_Cd_Desc\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Crm_Cd_Desc\"},\"Name\":\"Fact.Crm_Cd_Desc\",\"NativeReferenceName\":\"Crm_Cd_Desc\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#EE251D'\"}}}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 108.26,
+          "width": 242.24,
+          "x": 519.67,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"488c430331c18e32385a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":291.5774146578224,\"z\":9000,\"width\":162.5764978698161,\"height\":91.0074960901688,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Theft Crime Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Theft Crime Ratio\"},\"Name\":\"Fact.Theft Crime Ratio\",\"NativeReferenceName\":\"Theft Crime Ratio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Theft Crime Ratio\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEBB00'\"}}}}}}}]}},\"parentGroupName\":\"f684c1ca7c3970882c69\"}",
+          "filters": "[]",
+          "height": 91.01,
+          "width": 162.58,
+          "x": 0.00,
+          "y": 291.58,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"6b2001002bed12399ad5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":790.7932912689424,\"y\":412.62622013697893,\"z\":7000,\"width\":468.2909992989268,\"height\":293.3445505042334,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact.Status_Desc\",\"active\":true}],\"Y\":[{\"queryRef\":\"Fact.Total Committed Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Status_Desc\"},\"Name\":\"Fact.Status_Desc\",\"NativeReferenceName\":\"Status_Desc\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"6D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ffffff'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 293.34,
+          "width": 468.29,
+          "x": 790.79,
+          "y": 412.63,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"7c721e3c3821002831de\",\"layouts\":[{\"id\":0,\"position\":{\"x\":912.126872246696,\"y\":0,\"z\":4000,\"width\":346.4458149779736,\"height\":108.26431718061674,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendar.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month\"},\"Name\":\"Calendar.Month\",\"NativeReferenceName\":\"Month\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"padding\":[{\"properties\":{\"left\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"top\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 108.26,
+          "width": 346.45,
+          "x": 912.13,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"953d094f83e8ce390dd8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":790.3295154185023,\"y\":121.79735682819384,\"z\":2000,\"width\":468.2431718061674,\"height\":273.3674008810573,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact.Premis_Desc\",\"active\":true}],\"Y\":[{\"queryRef\":\"Fact.Total Committed Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Premis_Desc\"},\"Name\":\"Fact.Premis_Desc\",\"NativeReferenceName\":\"Premis_Desc\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"37L\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 10 Total Crime by Premise'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ffffff'\"}}}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact\"}},\"Property\":\"Premis_Desc\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Premis_Desc\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Premis_Desc\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 273.37,
+          "width": 468.24,
+          "x": 790.33,
+          "y": 121.80,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"97d248e804610404d800\",\"layouts\":[{\"id\":0,\"position\":{\"x\":2.650703769616566,\"y\":493.9144690718869,\"z\":10000,\"width\":159.92579410019954,\"height\":91.0074960901688,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.YOY Crime Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"YOY Crime Ratio\"},\"Name\":\"Fact.YOY Crime Ratio\",\"NativeReferenceName\":\"YOY Crime Ratio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"YOY Crime Ratio\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEBB00'\"}}}}}}}]}},\"parentGroupName\":\"f684c1ca7c3970882c69\"}",
+          "filters": "[]",
+          "height": 91.01,
+          "width": 159.93,
+          "x": 2.65,
+          "y": 493.91,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"a9526d6b74ea7ec68aca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2000,\"width\":162.5764978698161,\"height\":91.0074960901688,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Total Committed Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEBB00'\"}}}}}}}]}},\"parentGroupName\":\"f684c1ca7c3970882c69\"}",
+          "filters": "[]",
+          "height": 91.01,
+          "width": 162.58,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"b03dd4004635c7813e31\",\"layouts\":[{\"id\":0,\"position\":{\"x\":2.650703769616566,\"y\":388.76988621042983,\"z\":6000,\"width\":159.92579410019954,\"height\":91.0074960901688,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Avg Time to Report\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Avg Time to Report\"},\"Name\":\"Fact.Avg Time to Report\",\"NativeReferenceName\":\"Avg Time to Report\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Avg Time to Report\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEBB00'\"}}}}}}}]}},\"parentGroupName\":\"f684c1ca7c3970882c69\"}",
+          "filters": "[]",
+          "height": 91.01,
+          "width": 159.93,
+          "x": 2.65,
+          "y": 388.77,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"bfc2e2a08c5481002b27\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":192.61780725880385,\"z\":5000,\"width\":162.57031289435366,\"height\":90.99512613924392,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Theft Related Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Theft Related Crime\"},\"Name\":\"Fact.Theft Related Crime\",\"NativeReferenceName\":\"Theft Related Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Theft Related Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEBB00'\"}}}}}}}]}},\"parentGroupName\":\"f684c1ca7c3970882c69\"}",
+          "filters": "[]",
+          "height": 91.00,
+          "width": 162.57,
+          "x": 0.00,
+          "y": 192.62,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"caf380f0eba3a6080e04\",\"layouts\":[{\"id\":0,\"position\":{\"x\":197.919214798037,\"y\":412.62622013697893,\"z\":6000,\"width\":576.969853853206,\"height\":293.3445505042334,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Y\":[{\"queryRef\":\"Fact.LAT\"}],\"X\":[{\"queryRef\":\"Fact.LON\"}],\"Size\":[{\"queryRef\":\"Fact.Total Committed Crime\"}],\"Series\":[{\"queryRef\":\"Fact.AREA_NAME\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"LON\"},\"Name\":\"Fact.LON\",\"NativeReferenceName\":\"LON\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"LAT\"},\"Name\":\"Fact.LAT\",\"NativeReferenceName\":\"LAT\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AREA_NAME\"},\"Name\":\"Fact.AREA_NAME\",\"NativeReferenceName\":\"AREA_NAME\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Canvas'\"}}},\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'aeb3e9b0bd0786d44096'\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 293.34,
+          "width": 576.97,
+          "x": 197.92,
+          "y": 412.63,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"ddea08a597be4a270267\",\"layouts\":[{\"id\":0,\"position\":{\"x\":769.5876611120099,\"y\":0,\"z\":0,\"width\":142.25443563608908,\"height\":107.79528663107372,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendar.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"},\"Name\":\"Calendar.Year\",\"NativeReferenceName\":\"Year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[{\"name\":\"51fd65ec60c19a043078\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Year\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false,\"isLockedInViewMode\":true}]",
+          "height": 107.80,
+          "width": 142.25,
+          "x": 769.59,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e26bf3a96e05c3da6e7c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":94.54176778299089,\"z\":4000,\"width\":162.57031289435366,\"height\":90.99512613924392,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Avg Daily Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Avg Daily Crime\"},\"Name\":\"Fact.Avg Daily Crime\",\"NativeReferenceName\":\"Avg Daily Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Avg Daily Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00923F'\"}}}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEBB00'\"}}}}}}}]}},\"parentGroupName\":\"f684c1ca7c3970882c69\"}",
+          "filters": "[]",
+          "height": 91.00,
+          "width": 162.57,
+          "x": 0.00,
+          "y": 94.54,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f684c1ca7c3970882c69\",\"layouts\":[{\"id\":0,\"position\":{\"height\":584.9219651620558,\"width\":162.5764978698161,\"x\":9.719247155260746,\"y\":121.04880547915656,\"z\":8000,\"tabOrder\":8000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 584.92,
+          "width": 162.58,
+          "x": 9.72,
+          "y": 121.05,
+          "z": 8000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'crime scene.jpeg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"crime_scene5403388309597608.jpeg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"77D\"}}}}}]},\"visibility\":1}",
+      "displayName": "Area Analysis",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"6aa0c197802be57ee528\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact\"}},\"Property\":\"AREA_NAME\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AREA_NAME\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Foothill'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "1379afc2dcd1203c3d26",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"09092506914b452b7890\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16.48756634265609,\"y\":436.9205080803864,\"z\":5000,\"width\":623.7795932971554,\"height\":273.4188085157135,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact.Premis_Desc\",\"active\":true}],\"Y\":[{\"queryRef\":\"Fact.Total Committed Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Premis_Desc\"},\"Name\":\"Fact.Premis_Desc\",\"NativeReferenceName\":\"Premis_Desc\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 273.42,
+          "width": 623.78,
+          "x": 16.49,
+          "y": 436.92,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"25bcf1575689a08b5bde\",\"layouts\":[{\"id\":0,\"position\":{\"height\":109.05291342581494,\"width\":220.2388067558001,\"x\":29.863395210874774,\"y\":90.63471117069376,\"z\":1000,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Total Committed Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"7360fd6502905daeb808\"}",
+          "filters": "[]",
+          "height": 109.05,
+          "width": 220.24,
+          "x": 29.86,
+          "y": 90.63,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"26cf6cdb30c3424cdc89\",\"layouts\":[{\"id\":0,\"position\":{\"x\":818.8824616852526,\"y\":151.13602480768083,\"z\":6000,\"width\":447.9122189754905,\"height\":273.4188085157135,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact.Victim_Descent\",\"active\":true}],\"Y\":[{\"queryRef\":\"Fact.Total Committed Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Victim_Descent\"},\"Name\":\"Fact.Victim_Descent\",\"NativeReferenceName\":\"Victim_Descent\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 273.42,
+          "width": 447.91,
+          "x": 818.88,
+          "y": 151.14,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"29e8b3102907014cacac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":965.8965949072693,\"y\":436.9205080803864,\"z\":2000,\"width\":302.27204961536165,\"height\":273.4188085157135,\"tabOrder\":7000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 273.42,
+          "width": 302.27,
+          "x": 965.90,
+          "y": 436.92,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"321019d518a388d73c38\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16.48756634265609,\"y\":151.13602480768083,\"z\":1000,\"width\":787.2812928618283,\"height\":269.2969169300495,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.DATE_OCC\"},{\"queryRef\":\"Fact.Date_Rptd\"},{\"queryRef\":\"Fact.Crm_Cd_Desc\"},{\"queryRef\":\"Fact.Total Committed Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"DATE_OCC\"},\"Name\":\"Fact.DATE_OCC\",\"NativeReferenceName\":\"DATE_OCC\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Crm_Cd_Desc\"},\"Name\":\"Fact.Crm_Cd_Desc\",\"NativeReferenceName\":\"Crm_Cd_Desc\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Date_Rptd\"},\"Name\":\"Fact.Date_Rptd\",\"NativeReferenceName\":\"Date_Rptd\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Crm_Cd_Desc\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"310.8651276267363D\"}}}},\"selector\":{\"metadata\":\"Fact.Crm_Cd_Desc\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"112.65011047539505D\"}}}},\"selector\":{\"metadata\":\"Fact.Total Committed Crime\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"154.87046199337104D\"}}}},\"selector\":{\"metadata\":\"Fact.DATE_OCC\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"163.1150217387347D\"}}}},\"selector\":{\"metadata\":\"Fact.Date_Rptd\"}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 269.30,
+          "width": 787.28,
+          "x": 16.49,
+          "y": 151.14,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"3abfb68310331c067bb2\",\"layouts\":[{\"id\":0,\"position\":{\"height\":89.3076510227205,\"width\":238.7514588199315,\"x\":511.8331927642976,\"y\":0,\"z\":0,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Theft Related Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Theft Related Crime\"},\"Name\":\"Fact.Theft Related Crime\",\"NativeReferenceName\":\"Theft Related Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Theft Related Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"parentGroupName\":\"3b11bb2bd3d60b383b0c\"}",
+          "filters": "[]",
+          "height": 89.31,
+          "width": 238.75,
+          "x": 511.83,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"3b11bb2bd3d60b383b0c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16.48756634265609,\"y\":52.21062675174429,\"z\":3000,\"width\":1253.0550420418629,\"height\":89.30765102272049,\"tabOrder\":3000}}],\"singleVisualGroup\":{\"displayName\":\"Group 2\",\"groupMode\":0}}",
+          "height": 89.31,
+          "width": 1253.06,
+          "x": 16.49,
+          "y": 52.21,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"52c3078ea001e6747b3e\",\"layouts\":[{\"id\":0,\"position\":{\"height\":89.3076510227205,\"width\":238.7514588199315,\"x\":0,\"y\":0,\"z\":1000,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Total Committed Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"parentGroupName\":\"3b11bb2bd3d60b383b0c\"}",
+          "filters": "[]",
+          "height": 89.31,
+          "width": 238.75,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"56a59e623403158a094c\",\"layouts\":[{\"id\":0,\"position\":{\"height\":273.41880851571347,\"width\":289.9063748583696,\"x\":0,\"y\":0,\"z\":0,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Fact.Total Committed Crime\"}],\"Category\":[{\"queryRef\":\"Fact.Status_Desc\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Status_Desc\"},\"Name\":\"Fact.Status_Desc\",\"NativeReferenceName\":\"Status_Desc\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, percent of total'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Crime by Victim_Sex'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"parentGroupName\":\"7360fd6502905daeb808\"}",
+          "filters": "[]",
+          "height": 273.42,
+          "width": 289.91,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"5b4d66fb40456de30c36\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":0,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"6171c410e220000c1962\",\"layouts\":[{\"id\":0,\"position\":{\"height\":273.4188085157135,\"width\":302.27204961536165,\"x\":0,\"y\":0,\"z\":0,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact.Vict_Sex\",\"active\":true}],\"Y\":[{\"queryRef\":\"Fact.Total Committed Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Vict_Sex\"},\"Name\":\"Fact.Vict_Sex\",\"NativeReferenceName\":\"Vict_Sex\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, percent of total'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Crime by Victim_Sex'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"parentGroupName\":\"29e8b3102907014cacac\"}",
+          "filters": "[]",
+          "height": 273.42,
+          "width": 302.27,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7360fd6502905daeb808\",\"layouts\":[{\"id\":0,\"position\":{\"x\":658.1286898443557,\"y\":436.9205080803864,\"z\":4000,\"width\":289.9063748583696,\"height\":273.4188085157135,\"tabOrder\":6000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 273.42,
+          "width": 289.91,
+          "x": 658.13,
+          "y": 436.92,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"8d14c4e2590467aba006\",\"layouts\":[{\"id\":0,\"position\":{\"height\":89.3076510227205,\"width\":238.7514588199315,\"x\":1014.3035832219313,\"y\":0,\"z\":4000,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Prev Yr YTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Prev Yr YTD\"},\"Name\":\"Fact.Prev Yr YTD\",\"NativeReferenceName\":\"Prev Yr YTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Prev Yr YTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"parentGroupName\":\"3b11bb2bd3d60b383b0c\"}",
+          "filters": "[]",
+          "height": 89.31,
+          "width": 238.75,
+          "x": 1014.30,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"b741c8ea09a61180d640\",\"layouts\":[{\"id\":0,\"position\":{\"x\":475.39149621325066,\"y\":0,\"z\":7000,\"width\":472.6435684894746,\"height\":52.21062675174429,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Selected area\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Selected area\"},\"Name\":\"Fact.Selected area\",\"NativeReferenceName\":\"Selected area\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 52.21,
+          "width": 472.64,
+          "x": 475.39,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"d266f06ab08052024c0e\",\"layouts\":[{\"id\":0,\"position\":{\"height\":89.3076510227205,\"width\":238.7514588199315,\"x\":255.9165963821488,\"y\":0,\"z\":2000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Assualt Related Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Assualt Related Crime\"},\"Name\":\"Fact.Assualt Related Crime\",\"NativeReferenceName\":\"Assualt Related Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Assualt Related Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"parentGroupName\":\"3b11bb2bd3d60b383b0c\"}",
+          "filters": "[]",
+          "height": 89.31,
+          "width": 238.75,
+          "x": 255.92,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"dd28d9e7d7648e7cbcd7\",\"layouts\":[{\"id\":0,\"position\":{\"height\":89.3076510227205,\"width\":238.7514588199315,\"x\":763.0683879931145,\"y\":0,\"z\":3000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Avg Daily Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Avg Daily Crime\"},\"Name\":\"Fact.Avg Daily Crime\",\"NativeReferenceName\":\"Avg Daily Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Avg Daily Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"parentGroupName\":\"3b11bb2bd3d60b383b0c\"}",
+          "filters": "[]",
+          "height": 89.31,
+          "width": 238.75,
+          "x": 763.07,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"ecabd02c0760ec397e3e\",\"layouts\":[{\"id\":0,\"position\":{\"height\":109.35732562369752,\"width\":227.7999595194863,\"x\":35.73659699886049,\"y\":90.15430983491092,\"z\":1000,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.Total Committed Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Total Committed Crime\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"29e8b3102907014cacac\"}",
+          "filters": "[]",
+          "height": 109.36,
+          "width": 227.80,
+          "x": 35.74,
+          "y": 90.15,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"displayArea\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Middle'\"}}}}}]},\"visibility\":1,\"type\":1}",
+      "displayName": "Map tooltip",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 240.00,
+      "name": "aeb3e9b0bd0786d44096",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"416333a18a528c0060d3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":58,\"y\":37,\"z\":0,\"width\":238,\"height\":189,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact.LOCATION\"},{\"queryRef\":\"Fact.Total Committed Crime\"},{\"queryRef\":\"Fact.Prev Yr Crime\"},{\"queryRef\":\"Fact.Avg Daily Crime\"},{\"queryRef\":\"Fact.Theft Related Crime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Committed Crime\"},\"Name\":\"Fact.Total Committed Crime\",\"NativeReferenceName\":\"Current Yr Crime\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Prev Yr Crime\"},\"Name\":\"Fact.Prev Yr Crime\",\"NativeReferenceName\":\"Prev Yr Crime\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Avg Daily Crime\"},\"Name\":\"Fact.Avg Daily Crime\",\"NativeReferenceName\":\"Avg Daily Crime\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Theft Related Crime\"},\"Name\":\"Fact.Theft Related Crime\",\"NativeReferenceName\":\"Theft Related Crime\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"LOCATION\"},\"Name\":\"Fact.LOCATION\",\"NativeReferenceName\":\"LOCATION\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"LOCATION\"}}}]},\"columnProperties\":{\"Fact.Total Committed Crime\":{\"displayName\":\"Current Yr Crime\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"dataLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#EE251D'\"}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"card\":[{\"properties\":{\"barWeight\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#259C25'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 189.00,
+          "width": 238.00,
+          "x": 58.00,
+          "y": 37.00,
+          "z": 0.00
+        }
+      ],
+      "width": 320.00
+    }
+  ]
+}

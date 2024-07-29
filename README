@@ -1,1 +1,37 @@
 This is Microsoft Fabric Project Repository
+
+
+I decided to create an End to End Project with Microsoft Fabric using Los Angeles Police Department Data
+
+
+I Load the data into the lakehouse with Dataflow (Gen2), so I can schedule refresh to stay up to date on the data, Queried the data in the Sql endpoint and create a report from there. However, I had to bring it to Power BI desktop to add the finishing touches.
+
+
+here are insights from the report.
+
+The data span from 2020 till present.
+
+From the data, the crime committed between 2020 and 2022 increased by an average of 8.5% and declined in 2023 by 1.34%.
+
+
+As of July 2024, The Crimes committed compared to the same period in 2023 have dropped by 35.4% from a value of 134,009 to 86,534. Kudos to the LAPD for the policing.
+
+
+The data showed that the most targeted known Descent Victims of Los Angeles crime are Hispanic/Latin/Mexican and the least are the Samoan.
+
+
+The data revealed that the predominant targeted age group ranged from 21 - 50.
+
+
+The highest crime premise is the street with theft-related crime amounting to more than 79% of the street crime.
+
+
+The Highest Crime area is the central and the lowest crime area is the Foothill.
+
+
+It was also discovered that Theft-related Crime accounts for more than 64% of the Total crimes committed.
+
+
+From the Analysis, it was revealed that most crimes are committed between the hours of 11am and 11pm and are dependent on the Premises. Bar between 11pm and 2am, Banks, during working hours of 9am and 5pm, Parking Lots between 8am and 1pm, while driveway and Hospital are around the clock...
+
+
